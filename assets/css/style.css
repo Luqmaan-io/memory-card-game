@@ -11,12 +11,12 @@ body {
     height: 400px;
     width: 400px;
     background: #f8f8f8;
+    border-radius: 10px;
 }
 
 .cards, .card, .view{
     display: flex;
     align-items: center;
-    padding-bottom: 10px;
 }
 
 .cards{
@@ -27,7 +27,7 @@ body {
 
 .cards .card{
     height: calc(100% / 4 - 10px);
-    width: calc(100% / 4 - 10px)
+    width: calc(100% / 4 - 10px);
 }
 
 .card .back-view img{
