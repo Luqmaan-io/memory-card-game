@@ -11,13 +11,12 @@ body {
     height: 400px;
     width: 400px;
     background: #f8f8f8;
-    border-radius: 10px;
 }
 
 .cards, .card, .view{
     display: flex;
     align-items: center;
-    justify-content: center;
+    padding-bottom: 10px;
 }
 
 .cards{
