@@ -17,6 +17,7 @@ body {
 .cards, .card, .view{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .cards{
