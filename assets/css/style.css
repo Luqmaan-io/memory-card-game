@@ -46,6 +46,7 @@ body {
     background: #fff;
     border-radius: 7px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    backface-visibility: hidden;
 }
 .card .front-view span{
     color: rgb(98, 44, 214);
