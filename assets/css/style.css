@@ -59,10 +59,10 @@ body {
 .card .back-view img{
     max-width: 45px;
 }
-.card:hover .front-view {
+.card.flip .front-view {
     transform: rotateY(180deg);
 }
-.card:hover .back-view {
+.card.flip .back-view {
     transform: rotateY(0);
 }
 
