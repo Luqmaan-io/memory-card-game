@@ -10,6 +10,15 @@ A simple memory card matching game built with **JavaScript**, **HTML**, and **CS
 - Modal popup with game instructions
 
 ---
+
+## UX Design
+### Overview
+The memmory card game was developed with following functionality and design aspects in mind.
+- Mobile-friendly, designed to be responsive so that it can be used by anyone on any device.
+- Minamilistic, Site is simple and clear, easy for the user to understand what they are there for.
+
+---
+
 ## 🎮 Features
 - Flip cards to reveal hidden symbols  
 - Match pairs to clear them from the board  
