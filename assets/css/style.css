@@ -82,7 +82,7 @@ body {
   }
   
   /* Modal content box */
-  .modal-content {
+.modal-content {
     background-color: #fff;
     margin: 10% auto; 
     padding: 20px;
@@ -93,8 +93,8 @@ body {
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   }
   
-  /* Close button (X) */
-  .close {
+/* Close button (X) */
+.close {
     float: right;
     font-size: 24px;
     font-weight: bold;
@@ -102,6 +102,32 @@ body {
   }
   .close:hover {
     color: red;
+  }
+
+/* "How to Play" button styled like a link */
+#game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;      
+  }
+#howToPlayBtn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    text-decoration: underline;
+    display: block;
+    margin: 20px auto;
+    font-weight: bold;
+    display: block;
+    margin: 20px auto;
+    text-align: center;    
+  }
+  
+  #howToPlayBtn:hover {
+    color: #007bff;
   }
   
 
