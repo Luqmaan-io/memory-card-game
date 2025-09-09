@@ -3,6 +3,7 @@
     margin-top: 20px;
     font-size: 2.5rem;
     font-weight: bold;
+    color: #1A1A1A;
   }
 
 /*  card img styles */
@@ -89,6 +90,7 @@ body {
   /* Modal content box */
 .modal-content {
     background-color: #fff;
+    color: #1A1A1A;
     margin: 10% auto; 
     padding: 20px;
     border-radius: 12px;
