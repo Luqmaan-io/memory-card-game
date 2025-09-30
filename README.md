@@ -68,4 +68,20 @@ Roboto, used for all text on this web page. Gives a smooth & modern feel to the 
 
 ---
 
+## Testing
+
+The following tests have been carried out to test the websites design and responsiveness along with tests to check the site meets accessibility needs aswell as its game logic and functionality.
+
+### Design & responsiveness
+
+### Accessibility 
+**Test:** Image `alt` attributes  
+**Method:** Reviewed all card images and their alt attributes
+**Result (Before):** `alt` tags were generic (`card-img`) and did not describe the images  
+**Action Taken:** Updated `alt` attributes to meaningful descriptions (e.g., "blue hexagon", "purple diamond")  
+**Result (After):** Screen readers now announce descriptive image names
+
+### Javascript functionaility
+
+### User testing
 
