@@ -75,6 +75,33 @@ body {
     transform: rotateY(0);
 }
 
+/* reset button / time attempt cards */
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+    width: 100%;
+  }
+
+.control-card {
+    background: #fff;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    user-select: none;
+    width: 90%;
+  }
+
+#resetBtn {
+    margin-top: 15px;
+}
+
 /* Modal (hidden by default) */
 .modal {
     display: none; 
@@ -112,7 +139,7 @@ body {
     color: red;
   }
 
-/* "How to Play" button styled like a link */
+/* "How to Play" button */
 #game-wrapper {
     display: flex;
     flex-direction: column;
@@ -134,5 +161,4 @@ body {
   #howToPlayBtn:hover {
     color: #fff;
   }
-  
 

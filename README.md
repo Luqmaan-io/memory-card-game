@@ -42,7 +42,13 @@ To cater to as many people as possible this website uses different measures to b
 The following design choices were made with accessability in mind, keeping the site looking attractive as usable.
 
 ### Colour
+The following colours have been chosen woth accessibility in mind. these colour offer a fun aesthetic for the user to help keep them engaged. 
+- Jet black, (#1A1A1A) Text colour.
+- Purple, (#622cd6), Background colour.
+- Light grey, (#f8f8f8), Card colour.
 
+### Fonts
+Roboto, used for all text on this web page. Gives a smooth & modern feel to the website.
 
 ---
 
