@@ -1,8 +1,16 @@
 const cards = document.querySelectorAll(".card");
 
+let cardOne, cardTwo;
+
 function flipCard(e) {
     let clickedCard = e.target;
     clickedCard.classList.add("flip");
+    if (!cardOne) {
+        // cardOne value to clickedCard 
+        return cardOne = clickedCard;
+    }
+    cardTwo = clickedCard;
+    console.log(cardOne, cardTwo);
 };
 
 // add click event to all cards
