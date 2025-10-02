@@ -81,12 +81,16 @@ The following tests have been carried out to test the websites design and respon
 **Action Taken:** Updated `alt` attributes to meaningful descriptions (e.g., "blue hexagon", "purple diamond")  
 **Result (After):** Screen readers now announce descriptive image names
 
-**Test** On page load a pop-up modal for "how to play" appears before the game begins
-**Issue** Creates a barrier between the user and the game. Users had no choice but to dismmiss the pop-up
-**Action taken** Update the Javascript to remove the function where the modal would show on page load or refresh
-**Result** Modal only shows when called with "how to play" button is clicked
+**Test:** On page load a pop-up modal for "how to play" appears before the game begins
+**Issue:** Creates a barrier between the user and the game. Users had no choice but to dismmiss the pop-up
+**Action taken:** Update the Javascript to remove the function where the modal would show on page load or refresh
+**Result:** Modal only shows when called with "how to play" button is clicked
 
 ### Javascript functionaility
+**Test:** Click a card to see if flip function works
+**Result (Before):** Front of card is shown with a `question mark` symbol
+**Expect result:** Card flips on its vertical axis to reveal the image on the back side
+**Result:** ✅ Working (cards flip correctly).
 
 ### User testing
 
