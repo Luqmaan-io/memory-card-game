@@ -15,11 +15,6 @@ const modal = document.getElementById("instructionsModal");
 const btn = document.getElementById("howToPlayBtn");
 const span = document.getElementsByClassName("close")[0];
 
-// Show modal on page load (refresh)
-window.onload = () => {
-  modal.style.display = "block";
-};
-
 // Show modal when "How to Play" is clicked
 btn.onclick = () => {
   modal.style.display = "block";
