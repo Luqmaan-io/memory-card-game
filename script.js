@@ -25,9 +25,11 @@ function matchCards(img1, img2) {
     }
     console.log("Cards not matched");
 
-    cardOne.classList.add("shake");
-    cardTwo.classList.add("shake");
-
+    // when cards don't match
+    setTimeout (() => {
+        cardOne.classList.add("shake");
+        cardTwo.classList.add("shake");
+    }, 400);
 }
 
 // add click event to all cards
