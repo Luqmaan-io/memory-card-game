@@ -18,7 +18,7 @@ function flipCard(e) {
     }
 };
 
-function matchCards(img1, img2){
+function matchCards(img1, img2) {
     if (img1 === img2) {
         // if cards match
         return console.log("Cards matched")
