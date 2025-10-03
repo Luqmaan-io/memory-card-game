@@ -11,9 +11,24 @@ function flipCard(e) {
             return cardOne = clickedCard;
         }
         cardTwo = clickedCard;
-        console.log(cardOne, cardTwo);
+        
+        let cardOneImg = cardOne.querySelector("img").src,
+            cardTwoImg = cardTwo.querySelector("img").src;
+        matchCards(cardOneImg, cardTwoImg);
     }
 };
+
+function matchCards(img1, img2){
+    if (img1 === img2) {
+        // if cards match
+        return console.log("Cards matched")
+    }
+    console.log("Cards not matched");
+
+    cardOne.classList.add("shake");
+    cardTwo.classList.add("shake");
+
+}
 
 // add click event to all cards
 cards.forEach(card => {
