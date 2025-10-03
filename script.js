@@ -21,6 +21,8 @@ function flipCard(e) {
 function matchCards(img1, img2) {
     if (img1 === img2) {
         // if cards match
+        cardOne.removeEventListener("click", flipCard);
+        cardTwo.removeEventListener("click", flipCard);
         return console.log("Cards matched")
     }
     console.log("Cards not matched");
