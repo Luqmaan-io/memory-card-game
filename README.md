@@ -39,7 +39,7 @@ To cater to as many people as possible this website uses different measures to b
 ---
 
 ## Design choices
-The following design choices were made with accessability in mind, keeping the site looking attractive as usable.
+The following design choices were made with accessability in mind, keeping the site looking attractive as well as usable.
 
 ### Colour
 The following colours have been chosen woth accessibility in mind. these colour offer a fun aesthetic for the user to help keep them engaged. 
@@ -89,8 +89,13 @@ The following tests have been carried out to test the websites design and respon
 ### Javascript functionaility
 **Test:** Click a card to see if flip function works
 **Result (Before):** Front of card is shown with a `question mark` symbol
-**Expect result:** Card flips on its vertical axis to reveal the image on the back side
+**Expected result:** Card flips on its vertical axis to reveal the image on the back side
 **Result:** ✅ Working (cards flip correctly).
+
+**Test:** Stop the same card from being clicked multiple times
+**Result (Before):** Each card can be clicked unlimited times even when flipped
+**Expected result:** Each card can only be clicked once, reflected in the message logged to the console
+**Result:** ✅ Working (console log messages show that the cards are only clicked once)
 
 ### User testing
 
