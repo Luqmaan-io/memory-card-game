@@ -30,7 +30,16 @@ function matchCards(img1, img2) {
         cardOne.classList.add("shake");
         cardTwo.classList.add("shake");
     }, 400);
+
+    // remove both shake and flip class after 1.2 seconds
+    setTimeout (() => {
+        cardOne.classList.remove("shake", "flip");
+        cardTwo.classList.remove("shake", "flip");
+        // reset both card values to blamk
+        cardOne = cardTwo = ""; 
+    }, 1200);
 }
+
 
 // add click event to all cards
 cards.forEach(card => {
