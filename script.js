@@ -23,6 +23,7 @@ function matchCards(img1, img2) {
         // if cards match
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
+        cardOne = cardTwo = ""; // reset both card values to blank
         return console.log("Cards matched")
     }
     console.log("Cards not matched");
