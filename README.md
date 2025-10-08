@@ -108,5 +108,11 @@ The following tests have been carried out to test the websites design and respon
 ![game screenshot](assets/readme/cards-match.png) 
 ![game screenshot](assets/readme/cards-unmatch.png) "flip" class is removed in 1.2 seconds...
 
+**Test:** Create timer function that starts on the first click and ends when all cards are matched.  
+**Result (Before):** Timer is created but only starts the count once the first 2 cards are clicked rather than starting with the very first click of the game.  
+**Fix:** Moved a section of code to the very top of the flipCard() function.  
+**Result:** ✅ Working as planned.
+
+
 ### User testing
 
