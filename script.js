@@ -9,6 +9,11 @@ let gameStarted = false;
 
 function flipCard(e) {
     let clickedCard = e.target;
+    // start timer on first click
+    if (!gameStarted) {
+        startTimer();
+        gameStarted = true;
+    }
     if (clickedCard !== cardOne && !disableDeck) {
         clickedCard.classList.add("flip");
         if (!cardOne) {
@@ -20,11 +25,6 @@ function flipCard(e) {
         let cardOneImg = cardOne.querySelector("img").src,
             cardTwoImg = cardTwo.querySelector("img").src;
         matchCards(cardOneImg, cardTwoImg);
-        // start timer on first click
-        if (!gameStarted) {
-            startTimer();
-            gameStarted = true;
-        }
     }
 };
 
