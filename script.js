@@ -1,5 +1,6 @@
 const cards = document.querySelectorAll(".card");
 
+let matchedCards = 0;
 let cardOne, cardTwo;
 let disableDeck = false
 
@@ -21,6 +22,13 @@ function flipCard(e) {
 
 function matchCards(img1, img2) {
     if (img1 === img2) {
+        matchedCards++; // increment matched value by 1
+        // if it reaches 8 all pairs have been matched, 8 * 2 = 16 cards
+        if (matchedCards == 8) {
+            setTimeout (() => {
+                return shuffleCards();
+            }, 1000);
+        }
         // if cards match
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
@@ -45,6 +53,24 @@ function matchCards(img1, img2) {
     }, 1200);
 }
 
+function shuffleCards() {
+    matchedCards = 0;
+    cardOne = cardTwo = ""; 
+    disableDeck = false;
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+
+    cards.forEach((card, index) => {
+        card.classList.remove("flip");
+        let imgTag = card.querySelector("img");
+        imgTag.src = `assets/images/img-${arr[index]}.png`;
+        card.addEventListener("click", flipCard)
+        return console.log("Cards shuffled");
+    });
+}
 
 // add click event to all cards
 cards.forEach(card => {
