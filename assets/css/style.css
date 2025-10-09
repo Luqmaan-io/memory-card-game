@@ -4,6 +4,7 @@ html, body {
 }  
 
 #game-title {
+    font-family: "roboto", sans-serif;
     text-align: center;
     margin-top: 40px;
     font-size: 2.5rem;
@@ -148,7 +149,7 @@ body {
     backdrop-filter: blur(3px);
 }
   
-  /* Modal content box */
+/* Modal content box */
 .modal-content  {
     background-color: #fff;
     color: #1A1A1A;
@@ -197,3 +198,15 @@ body {
     color: #fff;
 }
 
+footer {
+    position: fixed;
+    margin-bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: transparent;
+    padding: 5px 10px;
+}
+  
