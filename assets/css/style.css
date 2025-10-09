@@ -1,10 +1,15 @@
+html, body {
+    overflow: hidden;
+    height: 100%;
+}  
+
 #game-title {
     text-align: center;
     margin-top: 40px;
     font-size: 2.5rem;
     font-weight: bold;
     color: #1A1A1A;
-  }
+}
 
 /*  card img styles */
 body {
@@ -110,7 +115,7 @@ body {
     align-items: center; 
     gap: 10px;
     width: 100%;
-  }
+}
 
 .control-card {
     background: #fff;
@@ -124,7 +129,7 @@ body {
     padding: 15px;
     user-select: none;
     width: 90%;
-  }
+}
 
 #resetBtn {
     margin-top: 15px;
@@ -141,7 +146,7 @@ body {
     height: 100%; 
     background-color: rgba(0, 0, 0, 0.5); /* blurred/transparent background */
     backdrop-filter: blur(3px);
-  }
+}
   
   /* Modal content box */
 .modal-content  {
@@ -154,7 +159,7 @@ body {
     max-width: 500px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  }
+}
   
 /* Close button (X) */
 .close {
@@ -162,11 +167,11 @@ body {
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
 .close:hover {
     color: red;
-  }
+}
 
 /* "How to Play" button */
 #game-wrapper {
@@ -174,7 +179,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;      
-  }
+}
 
 #howToPlayBtn {
     background: none;
@@ -186,9 +191,9 @@ body {
     display: block;
     margin: 20px auto;
     font-weight: bold;
-  }
+}
   
   #howToPlayBtn:hover {
     color: #fff;
-  }
+}
 
