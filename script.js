@@ -3,8 +3,8 @@ const resetBtn = document.getElementById("reset-btn");
 
 let matchedCards = 0;
 let cardOne, cardTwo;
-let disableDeck = false
-let timer;              
+let disableDeck = false;
+let timer = null;           
 let totalSeconds = 0;   
 let gameStarted = false;
 
@@ -87,6 +87,7 @@ function shuffleCards() {
 shuffleCards();
 
 function startTimer() {
+    if (timer !== null) return; // Prevent multiple timers
     timer = setInterval(() => {
       totalSeconds++;
   
@@ -102,10 +103,12 @@ function startTimer() {
   
 function stopTimer() {
     clearInterval(timer);
+    timer = null; // Reset timer variable
 }
   
 function resetTimer() {
     clearInterval(timer);
+    timer = null; // Reset timer variable
     totalSeconds = 0;
     gameStarted = false;
     document.getElementById("timer").textContent = "0s";
