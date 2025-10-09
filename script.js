@@ -1,4 +1,5 @@
 const cards = document.querySelectorAll(".card");
+const resetBtn = document.getElementById("reset-btn");
 
 let matchedCards = 0;
 let cardOne, cardTwo;
@@ -109,7 +110,22 @@ function resetTimer() {
     gameStarted = false;
     document.getElementById("timer").textContent = "0s";
 }
-  
+
+resetBtn.addEventListener("click", () => {
+    resetTimer();
+    // Reset game variables
+    matchedCards = 0;
+    cardOne = "";
+    cardTwo = "";
+    disableDeck = false;
+    // Remove flip class from all cards and re-add click event
+    cards.forEach(card => {
+      card.classList.remove("flip");
+      card.addEventListener("click", flipCard);
+    });
+    setTimeout(shuffleCards, 300);
+  });
+
 // add click event to all cards
 cards.forEach(card => {
     card.addEventListener("click", flipCard)
