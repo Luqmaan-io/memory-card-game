@@ -83,6 +83,8 @@ function shuffleCards() {
     });
 }
 
+shuffleCards();
+
 function startTimer() {
     timer = setInterval(() => {
       totalSeconds++;
