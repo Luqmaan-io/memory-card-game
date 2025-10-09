@@ -115,19 +115,26 @@ function resetTimer() {
 }
 
 resetBtn.addEventListener("click", () => {
+    // stop and reset timer
+    stopTimer();
     resetTimer();
+  
     // Reset game variables
     matchedCards = 0;
     cardOne = "";
     cardTwo = "";
     disableDeck = false;
+  
     // Remove flip class from all cards and re-add click event
     cards.forEach(card => {
       card.classList.remove("flip");
       card.addEventListener("click", flipCard);
     });
+  
+    // Shuffle cards again
     setTimeout(shuffleCards, 300);
   });
+  
 
 // add click event to all cards
 cards.forEach(card => {
