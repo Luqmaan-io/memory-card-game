@@ -190,6 +190,7 @@ body {
 
 #howToPlayBtn {
     background: none;
+    font-family: "roboto", sans-serif;
     border: 2px solid #1A1A1A;
     font-size: 18px;
     color: #1A1A1A;
