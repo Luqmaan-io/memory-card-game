@@ -98,8 +98,7 @@ The following colors were chosen to ensure good contrast and a fun, accessible l
 ##### Typography
 - **Roboto:** Used site-wide for a clean, modern, and professional appearance.  
 
-##### Accessibility Considerations
-- Clear **ARIA labels** and descriptive **alt text** for all card elements.  
+##### Accessibility Considerations 
 - Responsive scaling across all devices.  
 - High contrast between text and background for readability.  
 
@@ -111,7 +110,8 @@ To provide visual feedback and interactivity cues:
 ---
 
 ### Future UX Goals
-Planned enhancements to improve engagement and replayability:
+Planned enhancements to improve engagement, accessibility and replayability:
+- **Clear ARIA labels** and descriptive **alt text** for all card elements. 
 - **End-of-Game Modal:** Show completion time, attempts, and allow users to enter their name.  
 - **Leaderboard Integration:** Save and display top scores/times from all players.  
 - **Win Detection:** Automatically detect when all pairs are matched.  
@@ -192,6 +192,8 @@ The image above is of a laptop size screen. On this device the game area moves t
 **Result:** ✅ Working (console log messages show that cards have either been match or unmatched with correct classes being removed and addded).  
 ![game screenshot](assets/images/readme/cards-match.png) 
 The above image shows console message being logged once 2 cards are matched.
+
+
 ![game screenshot](assets/images/readme/cards-unmatch.png) 
 The above screenshot was taken shortly after 2 cards were flipped and they did not match, the flip class is removed after 1.2 seconds.
 
@@ -212,4 +214,35 @@ The "how to play" button shows interactivity when hovering over it, text changes
 "I want to be able to see how long it takes me to complete the game. So that I can try to progress in how quickly I complete the game."  
 A timer has been added to the game that starts on the very first card being clicked snd flipped over. The timer runs until all cards have been matched and resets on the next game when the reset button is clicked.
 
+--
+## Deployment 
 
+This project is built using HTML, CSS, and JavaScript, so no additional dependencies are required. It can be run locally or deployed online.
+
+### Running Locally
+
+1. **Clone the Repository**  
+   Open a terminal and run:  
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+
+2. **Open in VS Code**
+    Navigate to the cloned folder and open it in Visual Studio Code.
+
+3. **Open the Application**
+    Open the index.html file in your web browser to run the game locally.
+
+
+### Deploying with Github Pages
+
+1. Push your project to a GitHub repository.
+
+2. Go to the repository on GitHub and click Settings.
+
+3. Scroll down to Pages in the sidebar.
+
+4. Under Source, select your branch (main or master) and set the folder to / (root).
+
+5. Click Save.
+GitHub will generate a live link to your site, usually:
+https://your-username.github.io/your-repo-name/
