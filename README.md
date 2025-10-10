@@ -127,12 +127,6 @@ Planned enhancements to improve engagement, accessibility and replayability:
 - Restart button to play again  
 - Responsive design for desktop and mobile  
 
----
-
-## 🛠️ Technologies Used
-- **HTML5** – structure  
-- **CSS3** – styling & animations  
-- **JavaScript (ES6)** – game logic  
 
 ---
 
@@ -246,3 +240,35 @@ This project is built using HTML, CSS, and JavaScript, so no additional dependen
 5. Click Save.
 GitHub will generate a live link to your site, usually:
 https://your-username.github.io/your-repo-name/
+
+--
+## CSS validated using official Jigsaw validator
+CSS ran through Jigsaw validator shows no errors found in the code.
+![CSS](assets/images/readme/CSS-Jigsaw-validated.png)
+
+
+## HTML validated using W3C validator
+HTML validator found no errors.
+![HTML](assets/images/readme/HTML-validated.png)
+
+## Lighthouse report
+![Lighthouse report](assets/images/readme/Lighthouse-report.png)
+
+---
+
+## 🛠️ Technologies Used
+- **HTML5** – structure  
+- **CSS3** – styling & animations  
+- **JavaScript (ES6)** – game logic  
+- **VS Code** - This web app was developed using VS code, a code editor developed by Microsoft. https://code.visualstudio.com/
+- **Google Fonts** - Used to add custom typography to the site. https://fonts.google.com/
+- **Favicon.io** - Used to generate the sites favicon in multiple formats. https://favicon.io/
+- **ChatGPT** - Used to help debug and guide with unfamiliar css and javascript skills. https://www.chatgpt.com 
+
+-- 
+
+## Acknowledgements
+
+Len Johnson - Tutor providing personal support and guidance when called upon. 
+chatGPT - Helped with many debugging issues and questions regarding ideas that I had during development
+Youtube - Tutorials on new ideas I was looking into and helped visualise things I wanted to try within this app.
