@@ -273,4 +273,4 @@ HTML validator found no errors.
 
 Len Johnson - Tutor providing personal support and guidance when called upon. 
 chatGPT - Helped with many debugging issues and questions regarding ideas that I had during development
-Youtube - Tutorials on new ideas I was looking into and helped visualise things I wanted to try within this app.
+Youtube - Tutorials on new ideas I was looking into and helped visualise things I wanted to try within this app: https://www.youtube.com/watch?v=DABkhfsBAWw&list=PLpwngcHZlPadAbdD_sFE_moH6RjgaTFCw&index=7 https://www.youtube.com/shorts/I1unAn8wgS4
