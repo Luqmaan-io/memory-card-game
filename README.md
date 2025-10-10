@@ -208,7 +208,8 @@ The "how to play" button shows interactivity when hovering over it, text changes
 "I want to be able to see how long it takes me to complete the game. So that I can try to progress in how quickly I complete the game."  
 A timer has been added to the game that starts on the very first card being clicked snd flipped over. The timer runs until all cards have been matched and resets on the next game when the reset button is clicked.
 
---
+---
+
 ## Deployment 
 
 This project is built using HTML, CSS, and JavaScript, so no additional dependencies are required. It can be run locally or deployed online.
@@ -241,7 +242,8 @@ This project is built using HTML, CSS, and JavaScript, so no additional dependen
 GitHub will generate a live link to your site, usually:
 https://your-username.github.io/your-repo-name/
 
---
+---
+
 ## CSS validated using official Jigsaw validator
 CSS ran through Jigsaw validator shows no errors found in the code.
 ![CSS](assets/images/readme/CSS-Jigsaw-validated.png)
@@ -265,7 +267,7 @@ HTML validator found no errors.
 - **Favicon.io** - Used to generate the sites favicon in multiple formats. https://favicon.io/
 - **ChatGPT** - Used to help debug and guide with unfamiliar css and javascript skills. https://www.chatgpt.com 
 
--- 
+---
 
 ## Acknowledgements
 
