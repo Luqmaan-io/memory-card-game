@@ -18,158 +18,163 @@
     <title>Memory card game</title>
 </head>
 <body>
-    <h1 id="game-title">Memory Card Game</h1>
-
-    <div id="game-wrapper"> 
-        <!-- How to Play Button -->
-        <button id="howToPlayBtn">How to Play</button>
-
-        <!-- Game card -->
-        <div class="wrapper">
-            <ul class="cards">
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/green-square-bevelled-corners.png" alt="Green square with beveled corners, rotated 45 degrees">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/Pink-pentagon.png" alt="Pink pentagon">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/Purple-diamond.png" alt="Purple diamond">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/Light-pink-pentagon.png" alt="Pink pentagon with rounded edges">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/Blue-hexagon.png" alt="Blue hexagon">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/yellow-orange-square-bevelled-corners.png" alt="Orange square with beveled corners">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/Green-circle.png" alt="Green circle">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/purple-square-rotated-45-degress.png" alt="Purple square rotated 45 degrees">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/green-square-bevelled-corners.png" alt="Green square with beveled corners, rotated 45 degress">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/Pink-pentagon.png" alt="Pink pentagon">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/Purple-diamond.png" alt="Purple diamond">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/Light-pink-pentagon.png" alt="Pink pentagon with rounded edges">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/Blue-hexagon.png" alt="Blue hexagon">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/yellow-orange-square-bevelled-corners.png" alt="Orange square with beveled corners">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/Green-circle.png" alt="Green circle">
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="view front-view">
-                        <span class="material-icons">question_mark</span>
-                    </div>
-                    <div class="view back-view">
-                        <img src="assets/images/purple-square-rotated-45-degress.png" alt="Purple square rotated 45 degrees">
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- controls below game -->
-    <div class="controls">
-        <!-- Reset button (full width) -->
-        <button id="resetBtn" class="control-card reset-card">Reset</button>
+    <header>
+        <h1 id="game-title">Memory Card Game</h1>
+    </header>
     
-        <!-- Stats row (Timer + Attempts side by side) -->
-        <div class="stats-row">
-          <div class="control-card timer-card">Timer: <span id="timer">0s</span></div>
+    <div class="main-container">
+        <div id="game-wrapper"> 
+            <!-- How to Play Button -->
+            <button id="howToPlayBtn">How to Play</button>
 
-          <div class="control-card attempts-card">Attempts: <span id="attempts">0</span></div>
+            <!-- Game card -->
+            <div class="wrapper">
+                <ul class="cards">
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/green-square-bevelled-corners.png" alt="Green square with beveled corners, rotated 45 degrees">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/Pink-pentagon.png" alt="Pink pentagon">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/Purple-diamond.png" alt="Purple diamond">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/Light-pink-pentagon.png" alt="Pink pentagon with rounded edges">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/Blue-hexagon.png" alt="Blue hexagon">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/yellow-orange-square-bevelled-corners.png" alt="Orange square with beveled corners">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/Green-circle.png" alt="Green circle">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/purple-square-rotated-45-degress.png" alt="Purple square rotated 45 degrees">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/green-square-bevelled-corners.png" alt="Green square with beveled corners, rotated 45 degress">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/Pink-pentagon.png" alt="Pink pentagon">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/Purple-diamond.png" alt="Purple diamond">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/Light-pink-pentagon.png" alt="Pink pentagon with rounded edges">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/Blue-hexagon.png" alt="Blue hexagon">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/yellow-orange-square-bevelled-corners.png" alt="Orange square with beveled corners">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/Green-circle.png" alt="Green circle">
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="view front-view">
+                            <span class="material-icons">question_mark</span>
+                        </div>
+                        <div class="view back-view">
+                            <img src="assets/images/purple-square-rotated-45-degress.png" alt="Purple square rotated 45 degrees">
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
+
+        <!-- controls below game -->
+        <div class="controls">
+            <!-- Reset button (full width) -->
+            <button id="resetBtn" class="control-card reset-card">Reset</button>
+        
+            <!-- Stats row (Timer + Attempts side by side) -->
+            <div class="stats-row">
+            <div class="control-card timer-card">Timer: <span id="timer">0s</span></div>
+
+            <div class="control-card attempts-card">Attempts: <span id="attempts">0</span></div>
+            </div>
+        </div>
+        
     </div>
 
     <!-- Modal Popup -->

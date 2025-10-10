@@ -1,5 +1,5 @@
 const cards = document.querySelectorAll(".card");
-const resetBtn = document.getElementById("reset-btn");
+const resetBtn = document.getElementById("resetBtn");
 
 let matchedCards = 0;
 let cardOne, cardTwo;
@@ -10,7 +10,7 @@ let gameStarted = false;
 
 function flipCard(e) {
     let clickedCard = e.target;
-    // start timer on first click
+    // Start timer on first click
     if (!gameStarted) {
         startTimer();
         gameStarted = true;
@@ -31,15 +31,15 @@ function flipCard(e) {
 
 function matchCards(img1, img2) {
     if (img1 === img2) {
-        matchedCards++; // increment matched value by 1
-        // if it reaches 8 all pairs have been matched, 8 * 2 = 16 cards
+        matchedCards++; // Increment matched value by 1
+        // If it reaches 8 all pairs have been matched, 8 * 2 = 16 cards
         if (matchedCards == 8) {
             stopTimer();
             setTimeout (() => {
                 return shuffleCards();
             }, 1000);
         }
-        // if cards match
+        // If cards match
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
         cardOne = cardTwo = ""; // reset both card values to blank
@@ -47,17 +47,17 @@ function matchCards(img1, img2) {
     }
     console.log("Cards not matched");
 
-    // when cards don't match
+    // When cards don't match
     setTimeout (() => {
         cardOne.classList.add("shake");
         cardTwo.classList.add("shake");
     }, 400);
 
-    // remove both shake and flip class after 1.2 seconds
+    // Remove both shake and flip class after 1.2 seconds
     setTimeout (() => {
         cardOne.classList.remove("shake", "flip");
         cardTwo.classList.remove("shake", "flip");
-        // reset both card values to blamk
+        // Reset both card values to blamk
         cardOne = cardTwo = "";
         disableDeck = false;
     }, 1200);
@@ -67,22 +67,41 @@ function shuffleCards() {
     matchedCards = 0;
     cardOne = cardTwo = ""; 
     disableDeck = false;
-    // create an array of 16 items with 8 pairs of numbers from 1 to 8
-    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
-    for (let i = arr.length - 1; i > 0; i--) {
+    // Array of your image filenames (each one appears twice for matching)
+    const imageFiles = [
+        "green-square-bevelled-corners.png",
+        "Pink-pentagon.png",
+        "Purple-diamond.png",
+        "Light-pink-pentagon.png",
+        "Blue-hexagon.png",
+        "yellow-orange-square-bevelled-corners.png",
+        "Green-circle.png",
+        "purple-square-rotated-45-degress.png",
+        "green-square-bevelled-corners.png",
+        "Pink-pentagon.png",
+        "Purple-diamond.png",
+        "Light-pink-pentagon.png",
+        "Blue-hexagon.png",
+        "yellow-orange-square-bevelled-corners.png",
+        "Green-circle.png",
+        "purple-square-rotated-45-degress.png"
+    ];
+
+    // Shuffle the array
+    for (let i = imageFiles.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
+        [imageFiles[i], imageFiles[j]] = [imageFiles[j], imageFiles[i]];
     }
 
-    // remove flip class from all cards and assign new images
+    // Reassign the images to each card
     cards.forEach((card, index) => {
         card.classList.remove("flip");
-        let imgTag = card.querySelector("img");
-        imgTag.src = `assets/images/img-${arr[index]}.png`;
-        card.addEventListener("click", flipCard)
-        return console.log("Cards shuffled");
+        const imgTag = card.querySelector("img");
+        imgTag.src = `assets/images/${imageFiles[index]}`;
+        card.addEventListener("click", flipCard);
     });
 }
+
 
 shuffleCards();
 
@@ -115,7 +134,7 @@ function resetTimer() {
 }
 
 resetBtn.addEventListener("click", () => {
-    // stop and reset timer
+    // Stop and reset timer
     stopTimer();
     resetTimer();
   
@@ -133,10 +152,10 @@ resetBtn.addEventListener("click", () => {
   
     // Shuffle cards again
     setTimeout(shuffleCards, 300);
-  });
+});
   
 
-// add click event to all cards
+// Add click event to all cards
 cards.forEach(card => {
     card.addEventListener("click", flipCard)
 });
