@@ -157,6 +157,7 @@ body {
   
 /* Modal content box */
 .modal-content  {
+    font-family: "roboto", sans-serif;
     background-color: #fff;
     color: #1A1A1A;
     margin: 10% auto; 
