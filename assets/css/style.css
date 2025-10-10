@@ -218,83 +218,79 @@ footer {
 }
   
 /* Meida Queries for responsiveness */
-/* ---------- Tablet (600px and up) ---------- */
-@media screen and (min-width: 600px) {
-    .wrapper {
+/* ===================== Tablet (768px - 1023px) ===================== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-container {
+        display: flex;
+        flex-direction: column; /* keep stacked */
+        align-items: center;
+        gap: 30px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    #game-wrapper {
         width: 80%;
-        height: 450px;
+        margin-top: 10px;
     }
 
-    .cards .card {
-        height: calc(100% / 4 - 8px);
-        width: calc(100% / 4 - 8px);
-    }
-
-    .control-card {
-        width: 70%;
-        font-size: 1.3rem;
-    }
-
-    #howToPlayBtn {
-        font-size: 20px;
-        padding: 10px 20px;
-    }
-
-    .modal-content {
-        width: 60%;
+    .controls {
+        width: 80%;
+        gap: 15px;
     }
 }
 
-/* ---------- Laptop (900px and up) ---------- */
-@media screen and (min-width: 900px) {
-    .wrapper {
-        width: 70%;
-        height: 500px;
+/* ===================== Laptop (1024px - 1439px) ===================== */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .main-container {
+        display: flex;
+        flex-direction: row; /* game left, controls right */
+        justify-content: center;
+        align-items: flex-start; /* move closer to top to avoid cutting off */
+        gap: 50px;
+        padding: 40px 50px 20px 50px; /* more top padding */
+        height: 100vh; /* ensure it fits in viewport */
     }
 
-    .cards .card {
-        height: calc(100% / 4 - 6px);
-        width: calc(100% / 4 - 6px);
+    #game-wrapper {
+        flex: 1;
+        max-width: 600px; /* optional limit for larger games */
+        margin-top: 0; /* remove any extra top margin */
     }
 
-    .control-card {
-        width: 60%;
-        font-size: 1.4rem;
-    }
-
-    #howToPlayBtn {
-        font-size: 22px;
-        padding: 12px 25px;
-    }
-
-    .modal-content {
-        width: 50%;
-    }
-}
-
-/* ---------- Desktop (1200px and up) ---------- */
-@media screen and (min-width: 1200px) {
-    .wrapper {
-        width: 60%;
+    .controls {
+        flex: 0 0 200px; /* fixed width for controls */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertically center controls next to game */
+        gap: 20px;
         height: 550px;
     }
+}
 
-    .cards .card {
-        height: calc(100% / 4 - 5px);
-        width: calc(100% / 4 - 5px);
+/* ===================== Desktop (1440px and above) ===================== */
+@media (min-width: 1440px) {
+    .main-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 70px;
+        padding: 50px 100px 30px 100px;
+        height: 100vh;
     }
 
-    .control-card {
-        width: 50%;
-        font-size: 1.5rem;
+    #game-wrapper {
+        flex: 1;
+        max-width: 700px;
+        margin-top: 0;
     }
 
-    #howToPlayBtn {
-        font-size: 24px;
-        padding: 15px 30px;
-    }
-
-    .modal-content {
-        width: 40%;
+    .controls {
+        flex: 0 0 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+        height: 550px;
     }
 }
