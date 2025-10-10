@@ -224,7 +224,7 @@ This project is built using HTML, CSS, and JavaScript, so no additional dependen
 1. **Clone the Repository**  
    Open a terminal and run:  
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Luqmaan-io/memory-card-game.git
 
 2. **Open in VS Code**
     Navigate to the cloned folder and open it in Visual Studio Code.
@@ -236,7 +236,7 @@ This project is built using HTML, CSS, and JavaScript, so no additional dependen
 ### Deploying with Github Pages
 
 1. Push your project to a GitHub repository.
-
+ 
 2. Go to the repository on GitHub and click Settings.
 
 3. Scroll down to Pages in the sidebar.
