@@ -16,7 +16,7 @@
 /*  card img styles */
 body {
     min-height: 100vh;
-    background: rgb(98, 44, 214);
+    background: #622CD6;
     margin: 0;
 }
 
@@ -90,7 +90,7 @@ body {
 }
 
 .card .front-view span{
-    color: rgb(98, 44, 214);
+    color: #622CD6;
     font-size: 40px;
 }
 

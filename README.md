@@ -13,44 +13,110 @@ A simple memory card matching game built with **JavaScript**, **HTML**, and **CS
 
 ---
 
-## UX Design
-### Overview
-The memmory card game was developed with following functionality and design aspects in mind.
-- Mobile-friendly, designed to be responsive so that it can be used by anyone on any device.
-- Minamilistic, Site is simple and clear, easy for the user to understand what they are there for.
+## User Experience (UX)
 
-### Accessability 
-To cater to as many people as possible this website uses different measures to be more accessible.
-- Clear aria labels on flipped cards with clear descriptions.
-- Responsive design that changes to all screen sizes.
+### Strategy Plane
 
----
+#### Project Goals
+The purpose of this project is to create a simple, engaging, and accessible **memory card game** that users can play directly in their browser.  
+The main objectives are to:
+- Provide users with a fun, interactive challenge that can be completed in minutes.  
+- Design a clean, responsive interface that works on all devices.  
+- Encourage replayability through the inclusion of a timer and reset functionality.  
 
-## User stories
-### As a new visitor
-1. I want to know what the purpose of the website is. So that I know whether it interests me.
-2. I want to know how to use the game. So that i'm able to play the game prperly without any issues.
-3. I want to be able to see how long it takes me to complete the game. So that I can try to progress in how quickly I complete the game.
-
-### As the site owner 
-1. I want the site to be simple and clutter free. So that visitors enjoy playing the game.
-
-### As the developer
-1. I want clear and readable code. So that the site is easy to maintain.
+#### User Goals
+The website is designed for users who:
+- Want a quick and casual browser game that’s easy to understand and play.  
+- Enjoy tracking their performance through time and, in future, attempts and scores.  
+- Prefer a clutter-free, intuitive design that works on any screen size.  
 
 ---
 
-## Design choices
-The following design choices were made with accessability in mind, keeping the site looking attractive as well as usable.
+### Scope Plane
 
-### Colour
-The following colours have been chosen woth accessibility in mind. these colour offer a fun aesthetic for the user to help keep them engaged. 
-- Jet black, (#1A1A1A) Text colour.
-- Purple, (#622cd6), Background colour.
-- Light grey, (#f8f8f8), Card colour.
+#### Features Included
+- **Memory Card Game:** Interactive card-flip gameplay with matching logic.  
+- **Timer:** Tracks how long the user spends playing.  
+- **Reset Button:** Instantly restarts the game.  
+- **Modal Instructions:** “How to Play” guide that clearly explains game rules.  
+- **Responsive Layout:** Works seamlessly across mobile, tablet, and desktop screens.  
 
-### Fonts
-Roboto, used for all text on this web page. Giving a smooth & modern feel to the website.
+#### Features Not Yet Included
+The following features are planned for future updates to expand engagement and functionality:
+- **Win Detection:** To recognize when all cards have been matched.  
+- **End-of-Game Modal:** A pop-up displaying the user’s completion time and total attempts, with an input field to enter their name.  
+- **Leaderboard System:** To save and display top times or scores from all players.  
+- **Attempts Counter:** To track how many moves the player makes.  
+- **Sound Effects:** To provide auditory feedback during gameplay.  
+- **Difficulty Levels:** Stages that increase in challenge by adding more cards.  
+
+---
+
+### Structure Plane
+
+#### Information Architecture
+The website follows a simple, linear structure to maintain focus on gameplay.  
+Users are immediately presented with the game interface upon loading, with optional access to the “How to Play” instructions.  
+All future enhancements, such as a leaderboard or end-of-game modal, will appear as overlays rather than separate pages to maintain a smooth experience.  
+
+#### Navigation Model
+- **Main Game Area:** Core interactive section where users play.  
+- **Header/Modal:** Displays game instructions when the “How to Play” button is clicked.  
+- **Footer:** Displays brief information and remains fixed to the bottom of the viewport.  
+
+---
+
+### Skeleton Plane
+
+#### Wireframes & Layout
+The design follows a **mobile-first approach**, with a single-column layout for small screens.  
+![Mobile/Tablet wireframe](assets/images/readme/Mobile-tablet-wireframe.png)
+
+
+As the screen size increases:
+- The **game grid** shifts slightly to the left.  
+- The **controls (Reset, Timer, Attempts)** move to the right and are vertically centered beside the game.  
+![Laptop/Desktop wireframe](assets/images/readme/laptop-desktop-wireframe.png)
+
+#### Content Priority
+- **Game Board:** Main focus of the interface.  
+- **Controls:** Secondary, but always visible and easily accessible.  
+- **Footer:** Minimal and fixed to the bottom for consistency across all screen sizes.  
+
+---
+
+### Surface Plane
+
+#### Visual Design
+
+##### Colour Palette
+The following colors were chosen to ensure good contrast and a fun, accessible look:
+ - **Purple (#622CD6):** Background color, giving the site a vibrant and energetic tone.  
+- **Light Grey (#F8F8F8):** Used for cards to create contrast against the background.  
+- **Jet Black (#1A1A1A):** Text color for clarity and readability.  
+
+##### Typography
+- **Roboto:** Used site-wide for a clean, modern, and professional appearance.  
+
+##### Accessibility Considerations
+- Clear **ARIA labels** and descriptive **alt text** for all card elements.  
+- Responsive scaling across all devices.  
+- High contrast between text and background for readability.  
+
+##### Interactive Elements
+To provide visual feedback and interactivity cues:
+- **“How to Play” Button:** Text color transitions smoothly from black to white on hover.  
+- **“Reset” Button:** Ripple effect animation on hover to emphasize interactivity.  
+
+---
+
+### Future UX Goals
+Planned enhancements to improve engagement and replayability:
+- **End-of-Game Modal:** Show completion time, attempts, and allow users to enter their name.  
+- **Leaderboard Integration:** Save and display top scores/times from all players.  
+- **Win Detection:** Automatically detect when all pairs are matched.  
+- **Difficulty Levels:** Introduce more cards for higher difficulty levels.  
+- **Sound Effects:** Enhance interactivity and user feedback through audio.  
 
 ---
 
@@ -79,6 +145,19 @@ Roboto, used for all text on this web page. Giving a smooth & modern feel to the
 The following tests have been carried out to test the websites design and responsiveness along with tests to check the site meets accessibility needs aswell as its game logic and functionality.
 
 ### Design & responsiveness
+
+Device and screen size test evidence
+
+**Mobile**
+![Mobile size screenshot](assets/images/readme/phone.png)
+The above image is the app on a mobile screen size. very simple layout and UI. Reset button, timer and attempts card stack ontop of each other below the main game area.
+
+![Tablet size screenshot](assets/images/readme/tablet.png)
+The above image shows the app on a tablet screen size. everything stays the same here except that the game and buttons expand slightly to take up more of the available space.
+
+![Laptop/ desktop screen size](assets/images/readme/laptop.png)
+The image above is of a laptop size screen. On this device the game area moves to the left side of the screen freeing up space on the right side of the screen for the reset button and time and attempt cards to sit. These sit in the vertical centre of the game card with the reset button again stacked on top of the timer and attempts card.
+
 
 ### Accessibility 
 **Test:** Image `alt` attributes.  
