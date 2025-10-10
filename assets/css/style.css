@@ -119,6 +119,7 @@ body {
 }
 
 .control-card {
+    font-family: "roboto", sans-serif;
     background: #fff;
     border-radius: 10px;
     font-size: 1.2rem;
@@ -136,6 +137,7 @@ body {
     margin-top: 15px;
 }
 
+/* Ripple effect for reset button */
 .ripple-btn {
     position: relative;
     overflow: hidden;
@@ -167,7 +169,6 @@ body {
     height: 300%;
 }
   
-
 .stats-row {
     display: flex;
     justify-content: center;
