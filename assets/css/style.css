@@ -218,7 +218,7 @@ footer {
 }
   
 /* Meida Queries for responsiveness */
-/* ===================== Tablet (768px - 1023px) ===================== */
+/*  Tablet (768px - 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
     .main-container {
         display: flex;
@@ -239,35 +239,35 @@ footer {
     }
 }
 
-/* ===================== Laptop (1024px - 1439px) ===================== */
+/* Laptop (1024px - 1439px) */
 @media (min-width: 1024px) and (max-width: 1439px) {
     .main-container {
         display: flex;
         flex-direction: row; /* game left, controls right */
         justify-content: center;
-        align-items: flex-start; /* move closer to top to avoid cutting off */
+        align-items: flex-start; 
         gap: 50px;
-        padding: 40px 50px 20px 50px; /* more top padding */
-        height: 100vh; /* ensure it fits in viewport */
+        padding: 40px 50px 20px 50px;
+        height: 100vh; /* fits in viewport */
     }
 
     #game-wrapper {
         flex: 1;
-        max-width: 600px; /* optional limit for larger games */
-        margin-top: 0; /* remove any extra top margin */
+        max-width: 600px; 
+        margin-top: 0; 
     }
 
     .controls {
         flex: 0 0 200px; /* fixed width for controls */
         display: flex;
         flex-direction: column;
-        justify-content: center; /* vertically center controls next to game */
+        justify-content: center; 
         gap: 20px;
         height: 550px;
     }
 }
 
-/* ===================== Desktop (1440px and above) ===================== */
+/* Desktop (1440px and above) */
 @media (min-width: 1440px) {
     .main-container {
         display: flex;
